@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1 class="form-title">Students Information</h1>
+    <div class="form-container">
+        <form id="student-form">
+            <label for="first-name">FIRST NAME :</label>
+            <input type="text" id="first-name" name="first-name">
+            <br>
+            <label for="last-name">LAST NAME :</label>
+            <input type="text" id="last-name" name="last-name">
+            <br>
+            <label for="dob">Date of Birth :</label>
+            <div class="dob-container">
+                <select id="dob-day" name="dob-day">
+                    <option value="">Day</option>
+                    <option>01</option>
+	                <option>02</option>
+	                <option>03</option>
+	                <option>04</option>
+	                <option>05</option>
+	                <option>07</option>
+	                <option>08</option>
+	                <option>09</option>
+	                <option>10</option>
+                </select>
+                <select id="dob-month" name="dob-month">
+                    <option value="">Month</option>
+                   <option>JAN</option>
+	               <option>FEB</option>
+	               <option>MARCH</option>
+	               <option>APRIL</option>
+	               <option>MAY</option>
+	               <option>JUNE</option>
+	               <option>JULY</option>
+	               <option>AUGUST</option>
+	               <option>SEPTEMBER</option>
+				   <option>OCTOBER</option>
+				   </select>
+                <select id="dob-year" name="dob-year">
+                    <option value="">Year</option>
+                    <option>2000</option>
+	                <option>2001</option>
+	                <option>2002</option>
+	                <option>2003</option>
+	                <option>2004</option>
+	                <option>2005</option>
+					<option>2006</option>
+					<option>2007</option>
+					<option>2008</option>
+					<option>2009</option>
+					<option>2010</option>
+	
+                </select>
+            </div>
+            <label for="email">Email Id :</label>
+            <input type="email" id="email" name="email" placeholder="Enter valid email">
+            <br>
+            <label for="mobile">Mobile Number :</label>
+            <input type="text" id="mobile" name="mobile" placeholder="Enter 10 digit mobile number">
+            <br>
+            <div class="gender-container">
+                <label for="gender">GENDER :</label>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male" class="inline">Male</label>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female" class="inline">Female</label>
+            </div>
+            <label for="address">ADDRESS :</label>
+            <textarea id="address" name="address"></textarea>
+            <br>
+            <label for="state">STATE :</label>
+            <input type="text" id="state" name="state">
+            <br>
+            <label for="country">COUNTRY :</label>
+            <input type="text" id="country" name="country" value="India" readonly>
+            <br>
+            <label>HOBBIES :</label>
+            <div class="hobbies-container">
+                <input type="checkbox" id="drawing" name="hobbies" value="Drawing">
+                <label for="drawing" class="inline">Drawing</label>
+                <input type="checkbox" id="singing" name="hobbies" value="Singing">
+                <label for="singing" class="inline">Singing</label>
+                <input type="checkbox" id="dancing" name="hobbies" value="Dancing">
+                <label for="dancing" class="inline">Dancing</label>
+                <input type="checkbox" id="sketching" name="hobbies" value="Sketching">
+                <label for="sketching" class="inline">Sketching</label>
+            </div>
+            <input type="submit" value="SUBMIT">
+            <input type="reset" value="RESET">
+        </form>
+    </div>
+    <script>
+        document.getElementById('student-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            window.location.href = 'Jude_registrationform.html';
+        });
+    </script>
+</body>
+</html>
